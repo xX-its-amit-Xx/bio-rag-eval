@@ -1,0 +1,32 @@
+{
+  "run_id": "f8af2b3ff3d1",
+  "started_at": "2026-05-23T05:23:02.278256Z",
+  "finished_at": "2026-05-23T05:23:02.427408Z",
+  "judge_model": "mock",
+  "judge_provider": "mock",
+  "extractor_model": "mock",
+  "extractor_provider": "mock",
+  "prompt_versions": {
+    "claim_extraction_v1": "1.0.0",
+    "completeness_judge_v1": "1.0.0",
+    "evidence_sufficiency_v1": "1.0.0",
+    "grounding_judge_v1": "1.1.0",
+    "mechanism_judge_v1": "1.0.0"
+  },
+  "prompt_hashes": {
+    "claim_extraction_v1": "git:cc8254ee24f2ef128a621c83b3d0f12bbaec891e",
+    "completeness_judge_v1": "git:ed5deb9a42c5a8c639fe7af7c146144ed187c35c",
+    "evidence_sufficiency_v1": "git:334c8e4d595d30dea9c4e78d6bf9865ae0459afc",
+    "grounding_judge_v1": "git:971ceaa263f428d0fe2eed6b23cb972e8d1e2794",
+    "mechanism_judge_v1": "git:025ad4e3f93c85c426e1a0d039cd7ac5081ca6b4"
+  },
+  "judge_model_version": "mock-deterministic-v0",
+  "bio_rag_eval_version": "0.1.0",
+  "seed": 7,
+  "random_seed": 7,
+  "bootstrap_n_resamples": 1000,
+  "ci_level": 0.95,
+  "predictions_adapter": "therapy_agent_v1",
+  "gold_source": "fda_triples_v1",
+  "config_hash": "19b861da1765"
+}

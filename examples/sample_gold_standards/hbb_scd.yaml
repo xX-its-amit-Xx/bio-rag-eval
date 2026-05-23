@@ -1,0 +1,46 @@
+case_id: hbb_scd
+name: "Sickle cell disease — HBB E6V -> BCL11A disruption (exa-cel) or HbF induction"
+task_type: variant_to_strategy
+category: curated
+question: |
+  A 19-year-old with homozygous HBB E6V (sickle cell disease) experiences recurrent
+  vaso-occlusive crises despite hydroxyurea. What sequence-specific options
+  exist, what is their mechanistic basis, and what is the current approval
+  status?
+
+context:
+  gene: HBB
+  variant: "homozygous c.20A>T, p.E6V (HbS)"
+  mutation: "Missense in beta-globin (E6V) causes hemoglobin polymerization under deoxygenation"
+  disease_phenotype: "Sickle cell disease with vaso-occlusive crises and chronic hemolytic anemia"
+
+expected_target: BCL11A
+expected_target_aliases:
+  - "exa-cel"
+  - "Casgevy"
+  - "exagamglogene autotemcel"
+  - "BCL11A"
+  - "fetal hemoglobin"
+  - "HbF"
+expected_modulation: edit
+expected_mechanism_class: gof
+
+expected_facets:
+  - "HbS polymerizes under deoxygenation, causing red cell sickling"
+  - "Re-inducing fetal hemoglobin (HbF) inhibits HbS polymerization"
+  - "BCL11A represses gamma-globin (HbF) in adults"
+  - "Disrupting the BCL11A erythroid enhancer de-represses gamma-globin"
+  - "Exa-cel (Casgevy) is an ex-vivo CRISPR-Cas9 therapy editing the BCL11A enhancer"
+  - "Exa-cel received FDA approval in December 2023 for SCD"
+
+required_citations:
+  - "Casgevy"
+  - "BCL11A"
+forbidden_claims:
+  - "Casgevy directly corrects the HBB E6V mutation"
+  - "Casgevy is delivered as a single intravenous AAV dose"
+
+min_confidence: 0.78
+references:
+  - "Frangoul H et al. CRISPR-Cas9 Gene Editing for Sickle Cell Disease and beta-Thalassemia. NEJM 2021"
+  - "FDA. Casgevy (exa-cel) approval, December 2023"

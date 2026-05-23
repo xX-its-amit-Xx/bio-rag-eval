@@ -1,0 +1,116 @@
+{
+  "case_id": "TTR__V122I",
+  "case_name": "TTR__V122I (gold: fda_triples_v1@latest)",
+  "extracted_claims": [
+    {
+      "claim_id": "c1",
+      "text": "ATTRv is driven by destabilizing TTR mutations causing tetramer dissociation and amyloid fibril formation.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e1"
+      ],
+      "span": null
+    },
+    {
+      "claim_id": "c2",
+      "text": "Patisiran is an LNP-formulated siRNA targeting TTR mRNA; vutrisiran is the GalNAc-conjugated subcutaneous successor.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e2"
+      ],
+      "span": null
+    },
+    {
+      "claim_id": "c3",
+      "text": "NTLA-2002 is an in vivo CRISPR-Cas9 therapy knocking out hepatic TTR after a single LNP infusion.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e3"
+      ],
+      "span": null
+    },
+    {
+      "claim_id": "c4",
+      "text": "The proposed strategy is siRNA of P02766 (TTR) - transthyretin for Hereditary ATTR amyloidosis with polyneuropathy and cardiomyopathy.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e1",
+        "e2",
+        "e3"
+      ],
+      "span": null
+    }
+  ],
+  "grounding_judgments": [
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "mock supported placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "mock supported placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "mock supported placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "c4",
+      "label": "partially_supported",
+      "rationale": "mock partial placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.7
+    }
+  ],
+  "mechanism_judgment": {
+    "score": 4,
+    "rationale": "mock mechanism placeholder; coherent chain",
+    "missing_steps": [],
+    "incorrect_steps": []
+  },
+  "evidence_sufficiency": {
+    "score": 3,
+    "n_independent_sources": 2,
+    "has_primary_literature": true,
+    "has_human_data": true,
+    "rationale": "mock evidence placeholder"
+  },
+  "completeness_judgments": [],
+  "metrics": {
+    "grounding_rate": 0.75,
+    "weak_grounding_rate": 0.875,
+    "contradiction_rate": 0.0,
+    "unsupported_rate": 0.0,
+    "n_graded_claims": 4.0,
+    "hallucination_rate": 0.0,
+    "uncited_rate": 0.0,
+    "miscitation_rate": 0.0,
+    "forbidden_claim_present": 0.0,
+    "n_factual_claims": 4.0,
+    "citation_traceability_offline_check": 1.0,
+    "n_citations": 3.0,
+    "correct_target": 1.0,
+    "correct_modulation_direction": 1.0,
+    "mechanism_coherence": 4.0,
+    "task_success_composite": 0.9166666666666666,
+    "answer_completeness": null,
+    "n_facets_expected": 0.0,
+    "n_facets_covered": 0.0,
+    "n_facets_partial": 0.0,
+    "evidence_sufficiency_score": 3.0,
+    "evidence_n_independent_sources": 2.0,
+    "evidence_has_human_data": 1.0
+  },
+  "flags": [],
+  "error": null,
+  "raw_outputs": {}
+}

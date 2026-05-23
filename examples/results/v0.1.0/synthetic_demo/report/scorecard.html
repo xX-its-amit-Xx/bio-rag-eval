@@ -1,0 +1,408 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>bio-rag-eval — f8af2b3ff3d1</title>
+<style>
+body { font: 14px/1.45 -apple-system,BlinkMacSystemFont,sans-serif; max-width: 1100px; margin: 24px auto; color:#222; }
+h1,h2,h3 { color:#1a3a5a; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+th, td { border:1px solid #ddd; padding:6px 10px; text-align:left; }
+th { background:#f3f5f8; }
+td.num, th.num { text-align:right; font-variant-numeric: tabular-nums; }
+.metric-good { color:#0a7a35; }
+.metric-bad { color:#a30; font-weight:600; }
+.flag { display:inline-block; background:#fde8e8; color:#a30; padding:2px 6px; border-radius:3px; margin-right:4px; font-size:12px; }
+details { margin:8px 0; }
+pre.snippet { background:#f7f8fa; padding:8px; border-left:3px solid #aac; white-space:pre-wrap; }
+.meta { color:#666; font-size:12px; }
+</style></head><body>
+<h1>bio-rag-eval — run <code>f8af2b3ff3d1</code></h1>
+<p class="meta">
+2026-05-23 05:23:02.278256+00:00 &middot;
+judge <code>mock:mock</code> &middot;
+extractor <code>mock:mock</code> &middot;
+bio-rag-eval v0.1.0 &middot;
+config <code>19b861da1765</code>
+</p>
+
+<h2>Prompt versions</h2>
+<table><tr><th>name</th><th>version</th></tr>
+<tr><td><code>claim_extraction_v1</code></td><td><code>1.0.0</code></td></tr><tr><td><code>completeness_judge_v1</code></td><td><code>1.0.0</code></td></tr><tr><td><code>evidence_sufficiency_v1</code></td><td><code>1.0.0</code></td></tr><tr><td><code>grounding_judge_v1</code></td><td><code>1.1.0</code></td></tr><tr><td><code>mechanism_judge_v1</code></td><td><code>1.0.0</code></td></tr>
+</table>
+
+<h2>Aggregate metrics</h2>
+<table>
+<tr><th>metric</th><th class="num">point</th><th>95% CI</th><th class="num">n</th></tr>
+<tr><td>grounding_rate</td>
+<td class="num"><strong>0.618</strong></td>
+<td>[0.441, 0.765]</td>
+<td class="num">34</td></tr><tr><td>hallucination_rate</td>
+<td class="num"><strong>0.179</strong></td>
+<td>[0.104, 0.252]</td>
+<td class="num">8</td></tr><tr><td>uncited_rate</td>
+<td class="num"><strong>0.000</strong></td>
+<td>[0.000, 0.000]</td>
+<td class="num">8</td></tr><tr><td>miscitation_rate</td>
+<td class="num"><strong>0.179</strong></td>
+<td>[0.104, 0.252]</td>
+<td class="num">8</td></tr><tr><td>forbidden_claim_present</td>
+<td class="num"><strong>0.000</strong></td>
+<td>[0.000, 0.000]</td>
+<td class="num">8</td></tr><tr><td>citation_traceability_offline_check</td>
+<td class="num"><strong>0.812</strong></td>
+<td>[0.625, 0.958]</td>
+<td class="num">8</td></tr><tr><td>correct_target</td>
+<td class="num"><strong>0.875</strong></td>
+<td>[0.625, 1.000]</td>
+<td class="num">8</td></tr><tr><td>correct_modulation_direction</td>
+<td class="num"><strong>0.750</strong></td>
+<td>[0.500, 1.000]</td>
+<td class="num">8</td></tr><tr><td>mechanism_coherence</td>
+<td class="num"><strong>4.000</strong></td>
+<td>[4.000, 4.000]</td>
+<td class="num">8</td></tr><tr><td>task_success_composite</td>
+<td class="num"><strong>0.792</strong></td>
+<td>[0.667, 0.875]</td>
+<td class="num">8</td></tr><tr><td>evidence_sufficiency_score</td>
+<td class="num"><strong>3.000</strong></td>
+<td>[3.000, 3.000]</td>
+<td class="num">8</td></tr>
+</table>
+
+
+
+<h2>Per-case</h2>
+<details>
+<summary><strong>CFTR__F508del</strong> — CFTR__F508del (gold: fda_triples_v1@latest)
+
+</summary>
+
+<table>
+<tr><th>metric</th><th class="num">value</th></tr>
+<tr><td>grounding_rate</td><td class="num">0.600</td></tr><tr><td>weak_grounding_rate</td><td class="num">0.700</td></tr><tr><td>contradiction_rate</td><td class="num">0.000</td></tr><tr><td>unsupported_rate</td><td class="num">0.200</td></tr><tr><td>n_graded_claims</td><td class="num">5.000</td></tr><tr><td>hallucination_rate</td><td class="num">0.200</td></tr><tr><td>uncited_rate</td><td class="num">0.000</td></tr><tr><td>miscitation_rate</td><td class="num">0.200</td></tr><tr><td>forbidden_claim_present</td><td class="num">0.000</td></tr><tr><td>n_factual_claims</td><td class="num">5.000</td></tr><tr><td>citation_traceability_offline_check</td><td class="num">1.000</td></tr><tr><td>n_citations</td><td class="num">4.000</td></tr><tr><td>correct_target</td><td class="num">1.000</td></tr><tr><td>correct_modulation_direction</td><td class="num">1.000</td></tr><tr><td>mechanism_coherence</td><td class="num">4.000</td></tr><tr><td>task_success_composite</td><td class="num">0.917</td></tr><tr><td>answer_completeness</td><td class="num">NaN</td></tr><tr><td>n_facets_expected</td><td class="num">0.000</td></tr><tr><td>n_facets_covered</td><td class="num">0.000</td></tr><tr><td>n_facets_partial</td><td class="num">0.000</td></tr><tr><td>evidence_sufficiency_score</td><td class="num">3.000</td></tr><tr><td>evidence_n_independent_sources</td><td class="num">2.000</td></tr><tr><td>evidence_has_human_data</td><td class="num">1.000</td></tr>
+</table>
+<h4>Claims &amp; grounding</h4>
+<details><summary>[c1] <em>factual</em> — F508del CFTR is misfolded and retained in the endoplasmic reticulum, reducing apical chloride channel density.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c2] <em>factual</em> — Elexacaftor and tezacaftor are correctors that stabilize CFTR folding and improve trafficking to the apical membrane.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c3] <em>factual</em> — Ivacaftor is a potentiator that increases the open-channel probability of CFTR at the membrane.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c4] <em>factual</em> — Trikafta (elexacaftor/tezacaftor/ivacaftor) improved FEV1 by 13.8 percentage points and lowered sweat chloride in F508del CF.</summary>
+
+
+<p><strong>partially_supported</strong> (conf 0.70)</p>
+<p>mock partial placeholder</p>
+
+
+</details><details><summary>[c5] <em>factual</em> — The proposed strategy is modulator of P13569 (CFTR) - CFTR chloride channel for Cystic fibrosis with pulmonary, pancreatic, and GI...</summary>
+
+
+<p><strong>unsupported</strong> (conf 0.60)</p>
+<p>mock unsupported placeholder</p>
+
+
+</details>
+
+</details><details>
+<summary><strong>HBB__E6V</strong> — HBB__E6V (gold: fda_triples_v1@latest)
+
+</summary>
+
+<table>
+<tr><th>metric</th><th class="num">value</th></tr>
+<tr><td>grounding_rate</td><td class="num">0.600</td></tr><tr><td>weak_grounding_rate</td><td class="num">0.700</td></tr><tr><td>contradiction_rate</td><td class="num">0.000</td></tr><tr><td>unsupported_rate</td><td class="num">0.200</td></tr><tr><td>n_graded_claims</td><td class="num">5.000</td></tr><tr><td>hallucination_rate</td><td class="num">0.200</td></tr><tr><td>uncited_rate</td><td class="num">0.000</td></tr><tr><td>miscitation_rate</td><td class="num">0.200</td></tr><tr><td>forbidden_claim_present</td><td class="num">0.000</td></tr><tr><td>n_factual_claims</td><td class="num">5.000</td></tr><tr><td>citation_traceability_offline_check</td><td class="num">1.000</td></tr><tr><td>n_citations</td><td class="num">4.000</td></tr><tr><td>correct_target</td><td class="num">1.000</td></tr><tr><td>correct_modulation_direction</td><td class="num">1.000</td></tr><tr><td>mechanism_coherence</td><td class="num">4.000</td></tr><tr><td>task_success_composite</td><td class="num">0.917</td></tr><tr><td>answer_completeness</td><td class="num">NaN</td></tr><tr><td>n_facets_expected</td><td class="num">0.000</td></tr><tr><td>n_facets_covered</td><td class="num">0.000</td></tr><tr><td>n_facets_partial</td><td class="num">0.000</td></tr><tr><td>evidence_sufficiency_score</td><td class="num">3.000</td></tr><tr><td>evidence_n_independent_sources</td><td class="num">2.000</td></tr><tr><td>evidence_has_human_data</td><td class="num">1.000</td></tr>
+</table>
+<h4>Claims &amp; grounding</h4>
+<details><summary>[c1] <em>factual</em> — HbS polymerizes under deoxygenation, causing red cell sickling and vaso-occlusion.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c2] <em>factual</em> — BCL11A represses gamma-globin in adults; disrupting its erythroid enhancer de-represses HbF.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c3] <em>factual</em> — Exa-cel (Casgevy) is an ex-vivo CRISPR-Cas9 therapy editing the BCL11A erythroid enhancer in autologous HSCs.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c4] <em>factual</em> — Casgevy was approved by the FDA in December 2023 for SCD in patients 12 years and older.</summary>
+
+
+<p><strong>partially_supported</strong> (conf 0.70)</p>
+<p>mock partial placeholder</p>
+
+
+</details><details><summary>[c5] <em>factual</em> — The proposed strategy is gene_therapy of BCL11A erythroid enhancer (BCL11Ae) for Sickle cell disease with vaso-occlusive crises and...</summary>
+
+
+<p><strong>unsupported</strong> (conf 0.60)</p>
+<p>mock unsupported placeholder</p>
+
+
+</details>
+
+</details><details>
+<summary><strong>SMN1__homozygous_deletion</strong> — SMN1__homozygous_deletion (gold: fda_triples_v1@latest)
+
+</summary>
+
+<table>
+<tr><th>metric</th><th class="num">value</th></tr>
+<tr><td>grounding_rate</td><td class="num">0.600</td></tr><tr><td>weak_grounding_rate</td><td class="num">0.700</td></tr><tr><td>contradiction_rate</td><td class="num">0.000</td></tr><tr><td>unsupported_rate</td><td class="num">0.200</td></tr><tr><td>n_graded_claims</td><td class="num">5.000</td></tr><tr><td>hallucination_rate</td><td class="num">0.200</td></tr><tr><td>uncited_rate</td><td class="num">0.000</td></tr><tr><td>miscitation_rate</td><td class="num">0.200</td></tr><tr><td>forbidden_claim_present</td><td class="num">0.000</td></tr><tr><td>n_factual_claims</td><td class="num">5.000</td></tr><tr><td>citation_traceability_offline_check</td><td class="num">0.500</td></tr><tr><td>n_citations</td><td class="num">4.000</td></tr><tr><td>correct_target</td><td class="num">1.000</td></tr><tr><td>correct_modulation_direction</td><td class="num">1.000</td></tr><tr><td>mechanism_coherence</td><td class="num">4.000</td></tr><tr><td>task_success_composite</td><td class="num">0.917</td></tr><tr><td>answer_completeness</td><td class="num">NaN</td></tr><tr><td>n_facets_expected</td><td class="num">0.000</td></tr><tr><td>n_facets_covered</td><td class="num">0.000</td></tr><tr><td>n_facets_partial</td><td class="num">0.000</td></tr><tr><td>evidence_sufficiency_score</td><td class="num">3.000</td></tr><tr><td>evidence_n_independent_sources</td><td class="num">2.000</td></tr><tr><td>evidence_has_human_data</td><td class="num">1.000</td></tr>
+</table>
+<h4>Claims &amp; grounding</h4>
+<details><summary>[c1] <em>factual</em> — SMA type 1 is caused by homozygous loss-of-function of SMN1; severity depends on SMN2 copy number.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c2] <em>factual</em> — SMN2 differs from SMN1 by a single nucleotide that disrupts an exon-7 splicing enhancer; most SMN2 transcripts exclude exon 7.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c3] <em>factual</em> — Nusinersen is an intrathecal ASO that promotes SMN2 exon-7 inclusion, restoring full-length SMN protein.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c4] <em>factual</em> — Earlier intervention yields the best motor trajectory; presymptomatic dosing recommended where feasible.</summary>
+
+
+<p><strong>partially_supported</strong> (conf 0.70)</p>
+<p>mock partial placeholder</p>
+
+
+</details><details><summary>[c5] <em>factual</em> — The proposed strategy is ASO of SMN2 pre-mRNA for SMA type 1 - severe infantile motor neuron degeneration.</summary>
+
+
+<p><strong>unsupported</strong> (conf 0.60)</p>
+<p>mock unsupported placeholder</p>
+
+
+</details>
+
+</details><details>
+<summary><strong>TTR__V122I</strong> — TTR__V122I (gold: fda_triples_v1@latest)
+
+</summary>
+
+<table>
+<tr><th>metric</th><th class="num">value</th></tr>
+<tr><td>grounding_rate</td><td class="num">0.750</td></tr><tr><td>weak_grounding_rate</td><td class="num">0.875</td></tr><tr><td>contradiction_rate</td><td class="num">0.000</td></tr><tr><td>unsupported_rate</td><td class="num">0.000</td></tr><tr><td>n_graded_claims</td><td class="num">4.000</td></tr><tr><td>hallucination_rate</td><td class="num">0.000</td></tr><tr><td>uncited_rate</td><td class="num">0.000</td></tr><tr><td>miscitation_rate</td><td class="num">0.000</td></tr><tr><td>forbidden_claim_present</td><td class="num">0.000</td></tr><tr><td>n_factual_claims</td><td class="num">4.000</td></tr><tr><td>citation_traceability_offline_check</td><td class="num">1.000</td></tr><tr><td>n_citations</td><td class="num">3.000</td></tr><tr><td>correct_target</td><td class="num">1.000</td></tr><tr><td>correct_modulation_direction</td><td class="num">1.000</td></tr><tr><td>mechanism_coherence</td><td class="num">4.000</td></tr><tr><td>task_success_composite</td><td class="num">0.917</td></tr><tr><td>answer_completeness</td><td class="num">NaN</td></tr><tr><td>n_facets_expected</td><td class="num">0.000</td></tr><tr><td>n_facets_covered</td><td class="num">0.000</td></tr><tr><td>n_facets_partial</td><td class="num">0.000</td></tr><tr><td>evidence_sufficiency_score</td><td class="num">3.000</td></tr><tr><td>evidence_n_independent_sources</td><td class="num">2.000</td></tr><tr><td>evidence_has_human_data</td><td class="num">1.000</td></tr>
+</table>
+<h4>Claims &amp; grounding</h4>
+<details><summary>[c1] <em>factual</em> — ATTRv is driven by destabilizing TTR mutations causing tetramer dissociation and amyloid fibril formation.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c2] <em>factual</em> — Patisiran is an LNP-formulated siRNA targeting TTR mRNA; vutrisiran is the GalNAc-conjugated subcutaneous successor.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c3] <em>factual</em> — NTLA-2002 is an in vivo CRISPR-Cas9 therapy knocking out hepatic TTR after a single LNP infusion.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c4] <em>factual</em> — The proposed strategy is siRNA of P02766 (TTR) - transthyretin for Hereditary ATTR amyloidosis with polyneuropathy and cardiomyopathy.</summary>
+
+
+<p><strong>partially_supported</strong> (conf 0.70)</p>
+<p>mock partial placeholder</p>
+
+
+</details>
+
+</details><details>
+<summary><strong>LDLR__c.661C&gt;T</strong> — LDLR__c.661C&gt;T (gold: fda_triples_v1@latest)
+
+</summary>
+
+<table>
+<tr><th>metric</th><th class="num">value</th></tr>
+<tr><td>grounding_rate</td><td class="num">0.750</td></tr><tr><td>weak_grounding_rate</td><td class="num">0.750</td></tr><tr><td>contradiction_rate</td><td class="num">0.000</td></tr><tr><td>unsupported_rate</td><td class="num">0.250</td></tr><tr><td>n_graded_claims</td><td class="num">4.000</td></tr><tr><td>hallucination_rate</td><td class="num">0.250</td></tr><tr><td>uncited_rate</td><td class="num">0.000</td></tr><tr><td>miscitation_rate</td><td class="num">0.250</td></tr><tr><td>forbidden_claim_present</td><td class="num">0.000</td></tr><tr><td>n_factual_claims</td><td class="num">4.000</td></tr><tr><td>citation_traceability_offline_check</td><td class="num">1.000</td></tr><tr><td>n_citations</td><td class="num">3.000</td></tr><tr><td>correct_target</td><td class="num">1.000</td></tr><tr><td>correct_modulation_direction</td><td class="num">0.000</td></tr><tr><td>mechanism_coherence</td><td class="num">4.000</td></tr><tr><td>task_success_composite</td><td class="num">0.583</td></tr><tr><td>answer_completeness</td><td class="num">NaN</td></tr><tr><td>n_facets_expected</td><td class="num">0.000</td></tr><tr><td>n_facets_covered</td><td class="num">0.000</td></tr><tr><td>n_facets_partial</td><td class="num">0.000</td></tr><tr><td>evidence_sufficiency_score</td><td class="num">3.000</td></tr><tr><td>evidence_n_independent_sources</td><td class="num">2.000</td></tr><tr><td>evidence_has_human_data</td><td class="num">1.000</td></tr>
+</table>
+<h4>Claims &amp; grounding</h4>
+<details><summary>[c1] <em>factual</em> — PCSK9 binds the hepatic LDL receptor and promotes its lysosomal degradation; PCSK9 inhibition increases LDLR recycling and lowers LDL-C.</summary>
+
+
+<p><strong>unsupported</strong> (conf 0.60)</p>
+<p>mock unsupported placeholder</p>
+
+
+</details><details><summary>[c2] <em>factual</em> — Evolocumab and alirocumab are subcutaneous monoclonal antibodies; FOURIER and ODYSSEY OUTCOMES showed cardiovascular event reduction.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c3] <em>factual</em> — Inclisiran is a hepatocyte-targeted siRNA lowering hepatic PCSK9 mRNA, with twice-yearly subcutaneous dosing.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c4] <em>factual</em> — The proposed strategy is monoclonal_antibody of PCSK9 for Heterozygous familial hypercholesterolemia with elevated LDL-C.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details>
+
+</details><details>
+<summary><strong>GLA__Fabry</strong> — GLA__Fabry (gold: fda_triples_v1@latest)
+
+</summary>
+
+<table>
+<tr><th>metric</th><th class="num">value</th></tr>
+<tr><td>grounding_rate</td><td class="num">0.500</td></tr><tr><td>weak_grounding_rate</td><td class="num">0.625</td></tr><tr><td>contradiction_rate</td><td class="num">0.000</td></tr><tr><td>unsupported_rate</td><td class="num">0.250</td></tr><tr><td>n_graded_claims</td><td class="num">4.000</td></tr><tr><td>hallucination_rate</td><td class="num">0.250</td></tr><tr><td>uncited_rate</td><td class="num">0.000</td></tr><tr><td>miscitation_rate</td><td class="num">0.250</td></tr><tr><td>forbidden_claim_present</td><td class="num">0.000</td></tr><tr><td>n_factual_claims</td><td class="num">4.000</td></tr><tr><td>citation_traceability_offline_check</td><td class="num">0.333</td></tr><tr><td>n_citations</td><td class="num">3.000</td></tr><tr><td>correct_target</td><td class="num">1.000</td></tr><tr><td>correct_modulation_direction</td><td class="num">0.000</td></tr><tr><td>mechanism_coherence</td><td class="num">4.000</td></tr><tr><td>task_success_composite</td><td class="num">0.583</td></tr><tr><td>answer_completeness</td><td class="num">NaN</td></tr><tr><td>n_facets_expected</td><td class="num">0.000</td></tr><tr><td>n_facets_covered</td><td class="num">0.000</td></tr><tr><td>n_facets_partial</td><td class="num">0.000</td></tr><tr><td>evidence_sufficiency_score</td><td class="num">3.000</td></tr><tr><td>evidence_n_independent_sources</td><td class="num">2.000</td></tr><tr><td>evidence_has_human_data</td><td class="num">1.000</td></tr>
+</table>
+<h4>Claims &amp; grounding</h4>
+<details><summary>[c1] <em>factual</em> — Classical Fabry disease results from loss of alpha-galactosidase A activity and lysosomal accumulation of globotriaosylceramide.</summary>
+
+
+<p><strong>partially_supported</strong> (conf 0.70)</p>
+<p>mock partial placeholder</p>
+
+
+</details><details><summary>[c2] <em>factual</em> — Agalsidase beta is recombinant human alpha-galactosidase A delivered intravenously every 2 weeks.</summary>
+
+
+<p><strong>unsupported</strong> (conf 0.60)</p>
+<p>mock unsupported placeholder</p>
+
+
+</details><details><summary>[c3] <em>factual</em> — Migalastat is an oral pharmacological chaperone for amenable GLA missense variants that improves enzyme folding and lysosomal trafficking.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c4] <em>factual</em> — The proposed strategy is enzyme_replacement of P06280 (GLA) - alpha-galactosidase A for Fabry disease - X-linked lysosomal storage...</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details>
+
+</details><details>
+<summary><strong>BCL11A__SCD_target</strong> — BCL11A__SCD_target (gold: fda_triples_v1@latest)
+
+</summary>
+
+<table>
+<tr><th>metric</th><th class="num">value</th></tr>
+<tr><td>grounding_rate</td><td class="num">0.333</td></tr><tr><td>weak_grounding_rate</td><td class="num">0.500</td></tr><tr><td>contradiction_rate</td><td class="num">0.000</td></tr><tr><td>unsupported_rate</td><td class="num">0.333</td></tr><tr><td>n_graded_claims</td><td class="num">3.000</td></tr><tr><td>hallucination_rate</td><td class="num">0.333</td></tr><tr><td>uncited_rate</td><td class="num">0.000</td></tr><tr><td>miscitation_rate</td><td class="num">0.333</td></tr><tr><td>forbidden_claim_present</td><td class="num">0.000</td></tr><tr><td>n_factual_claims</td><td class="num">3.000</td></tr><tr><td>citation_traceability_offline_check</td><td class="num">1.000</td></tr><tr><td>n_citations</td><td class="num">2.000</td></tr><tr><td>correct_target</td><td class="num">0.000</td></tr><tr><td>correct_modulation_direction</td><td class="num">1.000</td></tr><tr><td>mechanism_coherence</td><td class="num">4.000</td></tr><tr><td>task_success_composite</td><td class="num">0.583</td></tr><tr><td>answer_completeness</td><td class="num">NaN</td></tr><tr><td>n_facets_expected</td><td class="num">0.000</td></tr><tr><td>n_facets_covered</td><td class="num">0.000</td></tr><tr><td>n_facets_partial</td><td class="num">0.000</td></tr><tr><td>evidence_sufficiency_score</td><td class="num">3.000</td></tr><tr><td>evidence_n_independent_sources</td><td class="num">2.000</td></tr><tr><td>evidence_has_human_data</td><td class="num">1.000</td></tr>
+</table>
+<h4>Claims &amp; grounding</h4>
+<details><summary>[c1] <em>factual</em> — BCL11A is the major postnatal repressor of gamma-globin (HbF); disrupting its erythroid enhancer at the +58 site de-represses HbF.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c2] <em>factual</em> — Exa-cel edits the BCL11A erythroid enhancer in autologous HSCs ex vivo; edited cells are reinfused after myeloablation.</summary>
+
+
+<p><strong>partially_supported</strong> (conf 0.70)</p>
+<p>mock partial placeholder</p>
+
+
+</details><details><summary>[c3] <em>factual</em> — The proposed strategy is gene_therapy of BCL11A erythroid enhancer (BCL11Ae) for Sickle cell disease - therapeutic editing of BCL11A...</summary>
+
+
+<p><strong>unsupported</strong> (conf 0.60)</p>
+<p>mock unsupported placeholder</p>
+
+
+</details>
+
+</details><details>
+<summary><strong>ALAS1__porphyria</strong> — ALAS1__porphyria (gold: fda_triples_v1@latest)
+
+</summary>
+
+<table>
+<tr><th>metric</th><th class="num">value</th></tr>
+<tr><td>grounding_rate</td><td class="num">0.750</td></tr><tr><td>weak_grounding_rate</td><td class="num">0.875</td></tr><tr><td>contradiction_rate</td><td class="num">0.000</td></tr><tr><td>unsupported_rate</td><td class="num">0.000</td></tr><tr><td>n_graded_claims</td><td class="num">4.000</td></tr><tr><td>hallucination_rate</td><td class="num">0.000</td></tr><tr><td>uncited_rate</td><td class="num">0.000</td></tr><tr><td>miscitation_rate</td><td class="num">0.000</td></tr><tr><td>forbidden_claim_present</td><td class="num">0.000</td></tr><tr><td>n_factual_claims</td><td class="num">4.000</td></tr><tr><td>citation_traceability_offline_check</td><td class="num">0.667</td></tr><tr><td>n_citations</td><td class="num">3.000</td></tr><tr><td>correct_target</td><td class="num">1.000</td></tr><tr><td>correct_modulation_direction</td><td class="num">1.000</td></tr><tr><td>mechanism_coherence</td><td class="num">4.000</td></tr><tr><td>task_success_composite</td><td class="num">0.917</td></tr><tr><td>answer_completeness</td><td class="num">NaN</td></tr><tr><td>n_facets_expected</td><td class="num">0.000</td></tr><tr><td>n_facets_covered</td><td class="num">0.000</td></tr><tr><td>n_facets_partial</td><td class="num">0.000</td></tr><tr><td>evidence_sufficiency_score</td><td class="num">3.000</td></tr><tr><td>evidence_n_independent_sources</td><td class="num">2.000</td></tr><tr><td>evidence_has_human_data</td><td class="num">1.000</td></tr>
+</table>
+<h4>Claims &amp; grounding</h4>
+<details><summary>[c1] <em>factual</em> — In acute hepatic porphyrias, HMBS deficiency leads to accumulation of upstream porphyrin precursors during ALAS1 induction.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c2] <em>factual</em> — Givosiran is a GalNAc-conjugated siRNA that knocks down hepatic ALAS1 mRNA, reducing precursor accumulation and attack frequency.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c3] <em>factual</em> — ENVISION trial demonstrated reduced attack rate with givosiran versus placebo in adults with AHP.</summary>
+
+
+<p><strong>supported</strong> (conf 0.90)</p>
+<p>mock supported placeholder</p>
+
+
+</details><details><summary>[c4] <em>factual</em> — The proposed strategy is siRNA of Q9UN72 (ALAS1) - delta-aminolevulinate synthase 1 for Acute intermittent porphyria - heme biosynthesis...</summary>
+
+
+<p><strong>partially_supported</strong> (conf 0.70)</p>
+<p>mock partial placeholder</p>
+
+
+</details>
+
+</details>
+</body></html>

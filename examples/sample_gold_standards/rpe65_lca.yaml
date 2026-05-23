@@ -1,0 +1,43 @@
+case_id: rpe65_lca
+name: "Leber congenital amaurosis — biallelic RPE65 -> AAV gene replacement (voretigene)"
+task_type: variant_to_strategy
+category: curated
+question: |
+  A 7-year-old with severe early-onset retinal dystrophy is found to have
+  biallelic RPE65 loss-of-function variants and viable photoreceptors on OCT.
+  What approved therapy is indicated and how does its mechanism address the
+  underlying defect?
+
+context:
+  gene: RPE65
+  variant: "biallelic loss-of-function (compound heterozygous)"
+  mutation: "Loss of RPE65 isomerase activity prevents 11-cis-retinal regeneration in the visual cycle"
+  disease_phenotype: "RPE65-mediated inherited retinal dystrophy / LCA type 2"
+
+expected_target: RPE65
+expected_target_aliases:
+  - "voretigene neparvovec"
+  - "Luxturna"
+  - "AAV2"
+expected_modulation: replace
+expected_mechanism_class: lof
+
+expected_facets:
+  - "RPE65 encodes an RPE-resident isomerase essential for the visual cycle"
+  - "Biallelic LoF mutations prevent 11-cis-retinal regeneration causing photoreceptor dysfunction"
+  - "Viable photoreceptors on OCT are required for therapy to confer benefit"
+  - "Voretigene neparvovec is an AAV2 vector encoding human RPE65 cDNA"
+  - "Voretigene is delivered subretinally to each eye"
+  - "Luxturna was FDA-approved in December 2017 — the first directly administered gene therapy"
+
+required_citations:
+  - "voretigene"
+forbidden_claims:
+  - "voretigene is administered intravenously"
+  - "voretigene reverses photoreceptor loss in advanced disease"
+  - "Luxturna is a CRISPR therapy"
+
+min_confidence: 0.8
+references:
+  - "Russell S et al. Efficacy and safety of voretigene neparvovec for biallelic RPE65-mediated inherited retinal dystrophy. Lancet 2017"
+  - "FDA. Luxturna approval, December 2017"

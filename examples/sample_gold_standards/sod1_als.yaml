@@ -1,0 +1,45 @@
+case_id: sod1_als
+name: "SOD1-ALS — toxic gain-of-function -> ASO silencing (tofersen)"
+task_type: variant_to_strategy
+category: curated
+question: |
+  A 48-year-old man presents with progressive bulbar and limb weakness. Genetic
+  testing reveals a heterozygous SOD1 p.Ala4Val variant. What therapeutic
+  strategy should be prioritized and why? Cite specific clinical evidence.
+
+context:
+  gene: SOD1
+  variant: "p.Ala4Val (heterozygous)"
+  mutation: "Dominant missense in SOD1 causing toxic, aggregation-prone superoxide dismutase 1 in motor neurons"
+  disease_phenotype: "Familial ALS with progressive upper and lower motor neuron degeneration"
+
+expected_target: SOD1
+expected_target_aliases:
+  - "tofersen"
+  - "Qalsody"
+  - "BIIB067"
+  - "antisense oligonucleotide"
+expected_modulation: silence
+expected_mechanism_class: gof
+
+expected_facets:
+  - "SOD1 p.Ala4Val is a dominant gain-of-function mutation, not a loss-of-function"
+  - "Silencing SOD1 mRNA reduces toxic protein burden in motor neurons"
+  - "Tofersen is a SOD1-targeted antisense oligonucleotide (ASO)"
+  - "Tofersen received FDA accelerated approval in April 2023 based on neurofilament light reduction"
+  - "The VALOR trial (NEJM 2022) is the pivotal evidence for tofersen"
+  - "Tofersen is administered intrathecally"
+
+required_citations:
+  - "tofersen"
+  - "VALOR"
+forbidden_claims:
+  - "SOD1 ALS is caused by loss of SOD1 antioxidant function"
+  - "tofersen is a gene therapy"
+  - "gene replacement of SOD1"
+
+min_confidence: 0.75
+references:
+  - "Miller TM et al. Trial of Antisense Oligonucleotide Tofersen for SOD1 ALS. NEJM 2020"
+  - "Miller TM et al. Tofersen for SOD1-Associated ALS (VALOR). NEJM 2022;387:1099-1110"
+  - "FDA. Qalsody (tofersen) approval letter. April 25, 2023"

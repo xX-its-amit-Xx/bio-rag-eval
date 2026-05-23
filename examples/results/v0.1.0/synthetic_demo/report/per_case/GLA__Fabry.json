@@ -1,0 +1,116 @@
+{
+  "case_id": "GLA__Fabry",
+  "case_name": "GLA__Fabry (gold: fda_triples_v1@latest)",
+  "extracted_claims": [
+    {
+      "claim_id": "c1",
+      "text": "Classical Fabry disease results from loss of alpha-galactosidase A activity and lysosomal accumulation of globotriaosylceramide.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e1"
+      ],
+      "span": null
+    },
+    {
+      "claim_id": "c2",
+      "text": "Agalsidase beta is recombinant human alpha-galactosidase A delivered intravenously every 2 weeks.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e2"
+      ],
+      "span": null
+    },
+    {
+      "claim_id": "c3",
+      "text": "Migalastat is an oral pharmacological chaperone for amenable GLA missense variants that improves enzyme folding and lysosomal trafficking.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e3"
+      ],
+      "span": null
+    },
+    {
+      "claim_id": "c4",
+      "text": "The proposed strategy is enzyme_replacement of P06280 (GLA) - alpha-galactosidase A for Fabry disease - X-linked lysosomal storage disorder with renal, cardiac, and CNS manifestations.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e1",
+        "e2",
+        "e3"
+      ],
+      "span": null
+    }
+  ],
+  "grounding_judgments": [
+    {
+      "claim_id": "c1",
+      "label": "partially_supported",
+      "rationale": "mock partial placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "c2",
+      "label": "unsupported",
+      "rationale": "mock unsupported placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "mock supported placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "mock supported placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.9
+    }
+  ],
+  "mechanism_judgment": {
+    "score": 4,
+    "rationale": "mock mechanism placeholder; coherent chain",
+    "missing_steps": [],
+    "incorrect_steps": []
+  },
+  "evidence_sufficiency": {
+    "score": 3,
+    "n_independent_sources": 2,
+    "has_primary_literature": true,
+    "has_human_data": true,
+    "rationale": "mock evidence placeholder"
+  },
+  "completeness_judgments": [],
+  "metrics": {
+    "grounding_rate": 0.5,
+    "weak_grounding_rate": 0.625,
+    "contradiction_rate": 0.0,
+    "unsupported_rate": 0.25,
+    "n_graded_claims": 4.0,
+    "hallucination_rate": 0.25,
+    "uncited_rate": 0.0,
+    "miscitation_rate": 0.25,
+    "forbidden_claim_present": 0.0,
+    "n_factual_claims": 4.0,
+    "citation_traceability_offline_check": 0.3333333333333333,
+    "n_citations": 3.0,
+    "correct_target": 1.0,
+    "correct_modulation_direction": 0.0,
+    "mechanism_coherence": 4.0,
+    "task_success_composite": 0.5833333333333334,
+    "answer_completeness": null,
+    "n_facets_expected": 0.0,
+    "n_facets_covered": 0.0,
+    "n_facets_partial": 0.0,
+    "evidence_sufficiency_score": 3.0,
+    "evidence_n_independent_sources": 2.0,
+    "evidence_has_human_data": 1.0
+  },
+  "flags": [],
+  "error": null,
+  "raw_outputs": {}
+}

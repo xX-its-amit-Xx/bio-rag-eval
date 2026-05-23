@@ -1,0 +1,44 @@
+case_id: pcsk9_fh
+name: "Heterozygous familial hypercholesterolemia — LDLR variant -> PCSK9 inhibition (statin + alirocumab/evolocumab/inclisiran)"
+task_type: variant_to_strategy
+category: curated
+question: |
+  A 45-year-old woman with heterozygous familial hypercholesterolemia (LDLR
+  c.661C>T) has LDL-C of 195 mg/dL on maximally tolerated statin. What
+  next-line targeted therapy is appropriate and what is its mechanism?
+
+context:
+  gene: LDLR
+  variant: "heterozygous LDLR c.661C>T (p.Arg221*)"
+  mutation: "Heterozygous LDLR loss-of-function reduces hepatic LDL uptake"
+  disease_phenotype: "Heterozygous familial hypercholesterolemia with elevated LDL-C and premature CV risk"
+
+expected_target: PCSK9
+expected_target_aliases:
+  - "alirocumab"
+  - "Praluent"
+  - "evolocumab"
+  - "Repatha"
+  - "inclisiran"
+  - "Leqvio"
+  - "PCSK9 inhibitor"
+expected_modulation: inhibit
+expected_mechanism_class: lof
+
+expected_facets:
+  - "PCSK9 binds the LDL receptor and targets it for lysosomal degradation"
+  - "Inhibiting PCSK9 increases LDLR recycling and lowers LDL-C"
+  - "Alirocumab and evolocumab are monoclonal antibodies targeting PCSK9"
+  - "Inclisiran is a siRNA that lowers hepatic PCSK9 mRNA, administered twice yearly"
+  - "FOURIER (evolocumab) demonstrated cardiovascular benefit; ODYSSEY OUTCOMES (alirocumab) similarly"
+
+required_citations:
+  - "PCSK9"
+forbidden_claims:
+  - "PCSK9 inhibitors correct the underlying LDLR mutation"
+  - "PCSK9 inhibitors are first-line therapy before statins"
+
+min_confidence: 0.8
+references:
+  - "Sabatine MS et al. Evolocumab and Clinical Outcomes in Patients with Cardiovascular Disease (FOURIER). NEJM 2017"
+  - "Ray KK et al. Two Phase 3 Trials of Inclisiran in Patients with Elevated LDL Cholesterol. NEJM 2020"

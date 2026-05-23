@@ -1,0 +1,37 @@
+case_id: sod1_als_trials
+name: "Trial-matching: ambulatory adults with SOD1-ALS"
+task_type: clinical_trial_match
+category: curated
+
+question: |
+  List currently recruiting clinical trials enrolling ambulatory adults
+  with SOD1-ALS. For each, state the intervention and one specific
+  eligibility criterion that a candidate would need to meet. Cite NCT IDs.
+
+context:
+  disease: "SOD1-ALS"
+  ambulatory_required: true
+  age_minimum: 18
+
+expected_target: SOD1
+expected_target_aliases:
+  - "tofersen"
+  - "ulefnersen"
+  - "ION363"
+  - "SOD1"
+
+expected_facets:
+  - "At least one trial of an investigational SOD1-targeted therapy is currently recruiting"
+  - "Eligibility criteria stated must match the actual cited trial's protocol"
+  - "Ambulatory status (e.g. ALSFRS-R cutoff, walking ability) is correctly described"
+
+required_citations:
+  - "NCT"
+forbidden_claims:
+  - "tofersen is investigational only"
+  - "There are no recruiting trials for SOD1-ALS"
+
+min_confidence: 0.5
+references:
+  - "ClinicalTrials.gov NCT02623699 (VALOR — tofersen, completed)"
+  - "ClinicalTrials.gov NCT04856982 (ATLAS — presymptomatic SOD1 carriers)"

@@ -1,0 +1,133 @@
+{
+  "case_id": "HBB__E6V",
+  "case_name": "HBB__E6V (gold: fda_triples_v1@latest)",
+  "extracted_claims": [
+    {
+      "claim_id": "c1",
+      "text": "HbS polymerizes under deoxygenation, causing red cell sickling and vaso-occlusion.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e1"
+      ],
+      "span": null
+    },
+    {
+      "claim_id": "c2",
+      "text": "BCL11A represses gamma-globin in adults; disrupting its erythroid enhancer de-represses HbF.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e2"
+      ],
+      "span": null
+    },
+    {
+      "claim_id": "c3",
+      "text": "Exa-cel (Casgevy) is an ex-vivo CRISPR-Cas9 therapy editing the BCL11A erythroid enhancer in autologous HSCs.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e3"
+      ],
+      "span": null
+    },
+    {
+      "claim_id": "c4",
+      "text": "Casgevy was approved by the FDA in December 2023 for SCD in patients 12 years and older.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e4"
+      ],
+      "span": null
+    },
+    {
+      "claim_id": "c5",
+      "text": "The proposed strategy is gene_therapy of BCL11A erythroid enhancer (BCL11Ae) for Sickle cell disease with vaso-occlusive crises and chronic hemolytic anemia.",
+      "claim_type": "factual",
+      "cited_ids": [
+        "e1",
+        "e2",
+        "e3",
+        "e4"
+      ],
+      "span": null
+    }
+  ],
+  "grounding_judgments": [
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "mock supported placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "mock supported placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "mock supported placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "c4",
+      "label": "partially_supported",
+      "rationale": "mock partial placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "c5",
+      "label": "unsupported",
+      "rationale": "mock unsupported placeholder",
+      "quoted_evidence": null,
+      "confidence": 0.6
+    }
+  ],
+  "mechanism_judgment": {
+    "score": 4,
+    "rationale": "mock mechanism placeholder; coherent chain",
+    "missing_steps": [],
+    "incorrect_steps": []
+  },
+  "evidence_sufficiency": {
+    "score": 3,
+    "n_independent_sources": 2,
+    "has_primary_literature": true,
+    "has_human_data": true,
+    "rationale": "mock evidence placeholder"
+  },
+  "completeness_judgments": [],
+  "metrics": {
+    "grounding_rate": 0.6,
+    "weak_grounding_rate": 0.7,
+    "contradiction_rate": 0.0,
+    "unsupported_rate": 0.2,
+    "n_graded_claims": 5.0,
+    "hallucination_rate": 0.2,
+    "uncited_rate": 0.0,
+    "miscitation_rate": 0.2,
+    "forbidden_claim_present": 0.0,
+    "n_factual_claims": 5.0,
+    "citation_traceability_offline_check": 1.0,
+    "n_citations": 4.0,
+    "correct_target": 1.0,
+    "correct_modulation_direction": 1.0,
+    "mechanism_coherence": 4.0,
+    "task_success_composite": 0.9166666666666666,
+    "answer_completeness": null,
+    "n_facets_expected": 0.0,
+    "n_facets_covered": 0.0,
+    "n_facets_partial": 0.0,
+    "evidence_sufficiency_score": 3.0,
+    "evidence_n_independent_sources": 2.0,
+    "evidence_has_human_data": 1.0
+  },
+  "flags": [],
+  "error": null,
+  "raw_outputs": {}
+}

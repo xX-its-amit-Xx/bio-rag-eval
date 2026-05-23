@@ -1,0 +1,45 @@
+case_id: htt_huntington
+name: "Huntington's disease — CAG repeat expansion in HTT -> allele-selective lowering (still investigational)"
+task_type: variant_to_strategy
+category: curated
+question: |
+  A 38-year-old woman with confirmed CAG expansion of 44 repeats in HTT presents
+  with early choreiform movements. Discuss the rationale for HTT-lowering
+  therapy and the current state of evidence. What approach offers the best
+  benefit/risk?
+
+context:
+  gene: HTT
+  variant: "CAG expansion, 44 repeats"
+  mutation: "Polyglutamine expansion in huntingtin causing toxic gain-of-function aggregation and dominant neurodegeneration"
+  disease_phenotype: "Huntington's disease — autosomal dominant adult-onset neurodegeneration with chorea, cognitive decline"
+
+expected_target: HTT
+expected_target_aliases:
+  - "tominersen"
+  - "RG6042"
+  - "WVE-003"
+  - "AMT-130"
+  - "allele-selective"
+expected_modulation: silence
+expected_mechanism_class: gof
+
+expected_facets:
+  - "HD is caused by toxic gain-of-function from polyQ-expanded huntingtin"
+  - "Lowering mutant HTT is the dominant therapeutic hypothesis"
+  - "Tominersen (non-selective ASO) was discontinued in 2021 for futility/harm in GENERATION-HD1"
+  - "Allele-selective approaches (e.g. WVE-003) target SNPs linked to the expanded allele"
+  - "AMT-130 is an AAV-delivered miRNA approach in trials"
+  - "No HTT-lowering therapy is FDA-approved as of late 2025"
+
+required_citations:
+  - "tominersen"
+forbidden_claims:
+  - "tominersen is FDA-approved for Huntington's disease"
+  - "Huntington's disease is caused by loss of huntingtin function"
+  - "HTT-lowering therapy is curative"
+
+min_confidence: 0.6
+references:
+  - "Tabrizi SJ et al. Targeting Huntingtin Expression in Patients with HD (tominersen). NEJM 2019"
+  - "McColgan P et al. Tominersen lowers mutant huntingtin; GENERATION HD1 results 2022"

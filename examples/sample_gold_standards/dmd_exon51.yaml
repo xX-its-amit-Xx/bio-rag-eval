@@ -1,0 +1,42 @@
+case_id: dmd_exon51
+name: "Duchenne MD, out-of-frame exon 50 deletion -> exon-51 skipping (eteplirsen)"
+task_type: variant_to_strategy
+category: curated
+question: |
+  A 6-year-old boy with Duchenne muscular dystrophy carries an out-of-frame
+  deletion of DMD exon 50. What sequence-specific therapy is most
+  appropriate, and what is the expected effect on dystrophin?
+
+context:
+  gene: DMD
+  variant: "del-exon50 (out-of-frame)"
+  mutation: "Out-of-frame deletion of DMD exon 50 producing a premature stop and absent dystrophin"
+  disease_phenotype: "Duchenne muscular dystrophy — severe X-linked progressive muscle wasting"
+
+expected_target: DMD
+expected_target_aliases:
+  - "eteplirsen"
+  - "Exondys 51"
+  - "exon 51 skipping"
+  - "PMO"
+expected_modulation: edit
+expected_mechanism_class: lof
+
+expected_facets:
+  - "del-exon50 disrupts the DMD reading frame causing premature stop"
+  - "Skipping exon 51 restores the reading frame, producing internally-truncated but partially functional dystrophin (Becker-like)"
+  - "Eteplirsen is a phosphorodiamidate morpholino oligomer (PMO)"
+  - "Eteplirsen is approved only for patients with exon-51-amenable mutations (~13% of DMD)"
+  - "Dystrophin restoration with eteplirsen is modest (single-digit % of normal)"
+
+required_citations:
+  - "eteplirsen"
+forbidden_claims:
+  - "eteplirsen treats all Duchenne patients"
+  - "eteplirsen restores full dystrophin expression"
+  - "eteplirsen is a CRISPR therapy"
+
+min_confidence: 0.7
+references:
+  - "Mendell JR et al. Eteplirsen for the treatment of Duchenne muscular dystrophy. Annals of Neurology 2013"
+  - "FDA. Exondys 51 (eteplirsen) approval, Sept 2016"

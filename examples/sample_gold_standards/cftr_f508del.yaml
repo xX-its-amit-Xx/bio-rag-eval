@@ -1,0 +1,42 @@
+case_id: cftr_f508del
+name: "Cystic fibrosis — homozygous F508del CFTR -> elexacaftor/tezacaftor/ivacaftor"
+task_type: variant_to_strategy
+category: curated
+question: |
+  A 12-year-old with cystic fibrosis is homozygous for F508del in CFTR. What
+  pharmacologic strategy targets the underlying protein defect, and what is
+  the mechanistic basis for each component of the regimen?
+
+context:
+  gene: CFTR
+  variant: "homozygous F508del"
+  mutation: "Class II misfolding/processing defect in CFTR with reduced chloride channel function at the apical membrane"
+  disease_phenotype: "Cystic fibrosis with pulmonary, pancreatic, and GI manifestations"
+
+expected_target: CFTR
+expected_target_aliases:
+  - "elexacaftor"
+  - "tezacaftor"
+  - "ivacaftor"
+  - "Trikafta"
+  - "ETI"
+expected_modulation: activate
+expected_mechanism_class: lof
+
+expected_facets:
+  - "F508del CFTR misfolds and is degraded by the ER quality-control machinery"
+  - "Tezacaftor and elexacaftor are corrector small molecules — they stabilize CFTR folding/trafficking to the membrane"
+  - "Ivacaftor is a potentiator — it increases the open-channel probability of CFTR at the membrane"
+  - "Trikafta (ETI) is FDA-approved for patients with at least one F508del allele aged 2 and older"
+  - "Trikafta substantially improves FEV1, sweat chloride, and quality of life vs prior modulators"
+
+required_citations:
+  - "elexacaftor"
+forbidden_claims:
+  - "ivacaftor monotherapy is effective for F508del homozygotes"
+  - "Trikafta is a gene therapy"
+
+min_confidence: 0.85
+references:
+  - "Heijerman HGM et al. Efficacy and safety of elexacaftor/tezacaftor/ivacaftor in F508del homozygotes. Lancet 2019"
+  - "Middleton PG et al. Elexacaftor/Tezacaftor/Ivacaftor for CF with F508del. NEJM 2019"

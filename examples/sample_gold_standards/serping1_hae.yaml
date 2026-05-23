@@ -1,0 +1,50 @@
+case_id: serping1_hae
+name: "Hereditary angioedema (type 1) — SERPING1 haploinsufficiency -> plasma kallikrein inhibition (berotralstat / lanadelumab / sebetralstat / NTLA-2002)"
+task_type: variant_to_strategy
+category: curated
+question: |
+  A 27-year-old woman with recurrent painful subcutaneous and laryngeal
+  swelling has low C1-INH antigen and function, and a heterozygous SERPING1
+  truncating variant. What is the rationale for plasma kallikrein-directed
+  prophylaxis and which therapies are currently available?
+
+context:
+  gene: SERPING1
+  variant: "heterozygous truncating variant (haploinsufficient)"
+  mutation: "Haploinsufficiency of C1 esterase inhibitor; uncontrolled plasma kallikrein activity drives bradykinin generation"
+  disease_phenotype: "Hereditary angioedema type 1 with recurrent bradykinin-mediated angioedema attacks"
+
+expected_target: KLKB1
+expected_target_aliases:
+  - "plasma kallikrein"
+  - "lanadelumab"
+  - "Takhzyro"
+  - "berotralstat"
+  - "Orladeyo"
+  - "sebetralstat"
+  - "Ekterly"
+  - "NTLA-2002"
+  - "C1 esterase inhibitor"
+expected_modulation: inhibit
+expected_mechanism_class: lof
+
+expected_facets:
+  - "HAE-1 is driven by haploinsufficiency of C1-INH leading to unchecked plasma kallikrein activity"
+  - "Plasma kallikrein cleaves high molecular weight kininogen to release bradykinin"
+  - "Bradykinin acts on B2 receptors on endothelium causing vascular leak and angioedema"
+  - "Lanadelumab is a subcutaneous anti-plasma-kallikrein monoclonal antibody for long-term prophylaxis"
+  - "Berotralstat is an oral plasma kallikrein inhibitor for long-term prophylaxis"
+  - "Sebetralstat (Ekterly) is an oral on-demand plasma kallikrein inhibitor"
+  - "NTLA-2002 is an investigational in vivo CRISPR-Cas9 therapy knocking out KLKB1 in hepatocytes"
+
+required_citations:
+  - "plasma kallikrein"
+forbidden_claims:
+  - "HAE is an allergic disease responsive to antihistamines"
+  - "epinephrine reverses bradykinin-mediated angioedema attacks"
+
+min_confidence: 0.75
+references:
+  - "Banerji A et al. Effect of Lanadelumab in Hereditary Angioedema (HELP Study). JAMA 2018"
+  - "Zuraw B et al. Oral Berotralstat for Prophylactic Treatment of Hereditary Angioedema (APeX-2). JACI 2020"
+  - "Cohn DM et al. CRISPR-based therapy (NTLA-2002) for hereditary angioedema. NEJM 2024"

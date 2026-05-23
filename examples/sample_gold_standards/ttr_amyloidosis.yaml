@@ -1,0 +1,47 @@
+case_id: ttr_amyloidosis
+name: "Hereditary ATTR amyloidosis — TTR Val122Ile -> RNAi/ASO/CRISPR lowering"
+task_type: variant_to_strategy
+category: curated
+question: |
+  A 60-year-old Black man with progressive sensorimotor neuropathy and a TTR
+  p.Val122Ile variant has biopsy-confirmed transthyretin amyloid deposition.
+  Outline the therapeutic options that lower circulating TTR and their relative
+  mechanisms.
+
+context:
+  gene: TTR
+  variant: "p.Val122Ile (heterozygous)"
+  mutation: "Destabilizing missense in transthyretin causes tetramer dissociation and amyloid deposition"
+  disease_phenotype: "Hereditary ATTR amyloidosis with polyneuropathy and cardiomyopathy"
+
+expected_target: TTR
+expected_target_aliases:
+  - "patisiran"
+  - "Onpattro"
+  - "vutrisiran"
+  - "Amvuttra"
+  - "inotersen"
+  - "Tegsedi"
+  - "NTLA-2001"
+  - "nexiguran"
+expected_modulation: silence
+expected_mechanism_class: gof
+
+expected_facets:
+  - "ATTRv is driven by destabilizing TTR mutations causing tetramer dissociation and amyloid fibril formation"
+  - "Hepatic TTR knockdown reduces substrate for amyloid deposition"
+  - "Patisiran is a hepatocyte-targeted lipid nanoparticle siRNA"
+  - "Vutrisiran is a GalNAc-conjugated siRNA, subcutaneous, less frequent dosing"
+  - "Inotersen is an ASO (different chemistry, hepatic uptake)"
+  - "NTLA-2001 is an in vivo CRISPR-Cas9 therapy targeting TTR in hepatocytes"
+
+required_citations:
+  - "patisiran"
+forbidden_claims:
+  - "transthyretin amyloidosis is a recessive condition"
+  - "patisiran corrects the underlying TTR mutation"
+
+min_confidence: 0.75
+references:
+  - "Adams D et al. Patisiran, an RNAi Therapeutic, for Hereditary Transthyretin Amyloidosis. NEJM 2018"
+  - "Gillmore JD et al. CRISPR-Cas9 In Vivo Gene Editing for Transthyretin Amyloidosis. NEJM 2021"

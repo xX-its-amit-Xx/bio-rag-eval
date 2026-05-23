@@ -1,0 +1,46 @@
+case_id: sma_smn1
+name: "SMA, homozygous SMN1 loss -> SMN2 splice modulation (nusinersen) or gene replacement (onasemnogene)"
+task_type: variant_to_strategy
+category: curated
+question: |
+  A 4-month-old infant is diagnosed with type 1 spinal muscular atrophy via
+  homozygous deletion of SMN1. Two SMN2 copies are detected. What therapeutic
+  options should be discussed with the family and on what mechanistic basis?
+
+context:
+  gene: SMN1
+  variant: "homozygous deletion; SMN2 copy number = 2"
+  mutation: "Homozygous loss-of-function of SMN1; partial backup by paralogous SMN2 producing mostly exon-7-skipped, unstable SMN"
+  disease_phenotype: "SMA type 1 — severe infantile motor neuron degeneration"
+
+expected_target: SMN
+expected_target_aliases:
+  - "nusinersen"
+  - "Spinraza"
+  - "SMN2"
+  - "onasemnogene"
+  - "Zolgensma"
+  - "risdiplam"
+  - "Evrysdi"
+expected_modulation: replace
+expected_mechanism_class: lof
+
+expected_facets:
+  - "SMA type 1 is caused by loss-of-function of SMN1"
+  - "SMN2 produces predominantly exon-7-skipped, unstable SMN protein"
+  - "Nusinersen is an ASO that promotes SMN2 exon-7 inclusion"
+  - "Onasemnogene abeparvovec (Zolgensma) is an AAV9 gene replacement"
+  - "Risdiplam is an oral small-molecule SMN2 splicing modifier"
+  - "Earlier intervention (presymptomatic) yields the best outcomes"
+
+required_citations:
+  - "nusinersen"
+forbidden_claims:
+  - "SMA is a gain-of-function disorder"
+  - "Spinraza is a gene therapy"
+
+min_confidence: 0.75
+references:
+  - "Finkel RS et al. Nusinersen versus Sham Control in Infantile-Onset SMA. NEJM 2017"
+  - "Mendell JR et al. Single-Dose Gene-Replacement Therapy for SMA. NEJM 2017"
+  - "Baranello G et al. Risdiplam in Type 1 SMA. NEJM 2021"

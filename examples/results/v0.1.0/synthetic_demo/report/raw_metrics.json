@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "run_id": "f8af2b3ff3d1",
+    "started_at": "2026-05-23T05:23:02.278256Z",
+    "finished_at": "2026-05-23T05:23:02.427408Z",
+    "judge_model": "mock",
+    "judge_provider": "mock",
+    "extractor_model": "mock",
+    "extractor_provider": "mock",
+    "prompt_versions": {
+      "claim_extraction_v1": "1.0.0",
+      "completeness_judge_v1": "1.0.0",
+      "evidence_sufficiency_v1": "1.0.0",
+      "grounding_judge_v1": "1.1.0",
+      "mechanism_judge_v1": "1.0.0"
+    },
+    "prompt_hashes": {
+      "claim_extraction_v1": "git:cc8254ee24f2ef128a621c83b3d0f12bbaec891e",
+      "completeness_judge_v1": "git:ed5deb9a42c5a8c639fe7af7c146144ed187c35c",
+      "evidence_sufficiency_v1": "git:334c8e4d595d30dea9c4e78d6bf9865ae0459afc",
+      "grounding_judge_v1": "git:971ceaa263f428d0fe2eed6b23cb972e8d1e2794",
+      "mechanism_judge_v1": "git:025ad4e3f93c85c426e1a0d039cd7ac5081ca6b4"
+    },
+    "judge_model_version": "mock-deterministic-v0",
+    "bio_rag_eval_version": "0.1.0",
+    "seed": 7,
+    "random_seed": 7,
+    "bootstrap_n_resamples": 1000,
+    "ci_level": 0.95,
+    "predictions_adapter": "therapy_agent_v1",
+    "gold_source": "fda_triples_v1",
+    "config_hash": "19b861da1765"
+  },
+  "aggregate_metrics": {
+    "grounding_rate": {
+      "name": "grounding_rate",
+      "point": 0.6176470588235294,
+      "ci_low": 0.4411764705882353,
+      "ci_high": 0.7647058823529411,
+      "ci_level": 0.95,
+      "n": 34,
+      "notes": "Mean over graded claims (not cases). Bootstrap over claims."
+    },
+    "hallucination_rate": {
+      "name": "hallucination_rate",
+      "point": 0.17916666666666667,
+      "ci_low": 0.10406250000000009,
+      "ci_high": 0.2520833333333333,
+      "ci_level": 0.95,
+      "n": 8,
+      "notes": null
+    },
+    "uncited_rate": {
+      "name": "uncited_rate",
+      "point": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "ci_level": 0.95,
+      "n": 8,
+      "notes": null
+    },
+    "miscitation_rate": {
+      "name": "miscitation_rate",
+      "point": 0.17916666666666667,
+      "ci_low": 0.10406250000000009,
+      "ci_high": 0.2520833333333333,
+      "ci_level": 0.95,
+      "n": 8,
+      "notes": null
+    },
+    "forbidden_claim_present": {
+      "name": "forbidden_claim_present",
+      "point": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "ci_level": 0.95,
+      "n": 8,
+      "notes": null
+    },
+    "citation_traceability_offline_check": {
+      "name": "citation_traceability_offline_check",
+      "point": 0.8125,
+      "ci_low": 0.625,
+      "ci_high": 0.9583333333333333,
+      "ci_level": 0.95,
+      "n": 8,
+      "notes": null
+    },
+    "correct_target": {
+      "name": "correct_target",
+      "point": 0.875,
+      "ci_low": 0.625,
+      "ci_high": 1.0,
+      "ci_level": 0.95,
+      "n": 8,
+      "notes": null
+    },
+    "correct_modulation_direction": {
+      "name": "correct_modulation_direction",
+      "point": 0.75,
+      "ci_low": 0.5,
+      "ci_high": 1.0,
+      "ci_level": 0.95,
+      "n": 8,
+      "notes": null
+    },
+    "mechanism_coherence": {
+      "name": "mechanism_coherence",
+      "point": 4.0,
+      "ci_low": 4.0,
+      "ci_high": 4.0,
+      "ci_level": 0.95,
+      "n": 8,
+      "notes": null
+    },
+    "task_success_composite": {
+      "name": "task_success_composite",
+      "point": 0.7916666666666667,
+      "ci_low": 0.6666666666666667,
+      "ci_high": 0.875,
+      "ci_level": 0.95,
+      "n": 8,
+      "notes": null
+    },
+    "evidence_sufficiency_score": {
+      "name": "evidence_sufficiency_score",
+      "point": 3.0,
+      "ci_low": 3.0,
+      "ci_high": 3.0,
+      "ci_level": 0.95,
+      "n": 8,
+      "notes": null
+    }
+  },
+  "bias_consistency": {}
+}

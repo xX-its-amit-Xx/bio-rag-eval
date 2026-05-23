@@ -1,0 +1,120 @@
+- case_id: metformin_aging
+  name: "Metformin -> healthspan/aging extension (TAME)"
+  task_type: drug_repurposing
+  category: curated
+  question: |
+    Is there evidence that metformin extends healthspan beyond its
+    glycemic indication? What trial design is testing this and what is
+    its current status?
+  context:
+    drug: metformin
+    proposed_indication: "healthspan / multimorbidity prevention"
+  expected_target: "AMPK / mitochondrial complex I"
+  expected_target_aliases:
+    - "TAME"
+    - "AMPK"
+    - "Targeting Aging with Metformin"
+  expected_facets:
+    - "Metformin activates AMPK and inhibits mitochondrial complex I"
+    - "Observational data suggest metformin users have lower all-cause mortality and lower cancer incidence"
+    - "TAME (Targeting Aging with Metformin) is a proposed/planned phase 3 trial with multimorbidity endpoints"
+    - "MILES (Metformin in Longevity Study) provided preliminary transcriptomic data in older adults"
+  required_citations:
+    - "metformin"
+  forbidden_claims:
+    - "metformin is FDA-approved for aging"
+  min_confidence: 0.5
+  references:
+    - "Barzilai N et al. Metformin as a Tool to Target Aging. Cell Metab 2016"
+
+- case_id: minoxidil_alopecia
+  name: "Minoxidil — antihypertensive repurposed for androgenetic alopecia"
+  task_type: drug_repurposing
+  category: curated
+  question: |
+    Briefly describe the repurposing of minoxidil from antihypertensive
+    to topical treatment for alopecia, and the proposed mechanism for
+    the hair-growth effect.
+  context:
+    drug: minoxidil
+    proposed_indication: "androgenetic alopecia"
+  expected_target: "K-ATP channels / SULT1A1-mediated minoxidil sulfate"
+  expected_target_aliases:
+    - "minoxidil sulfate"
+    - "SULT1A1"
+    - "K-ATP"
+  expected_facets:
+    - "Minoxidil was originally developed as an antihypertensive vasodilator"
+    - "Hair growth was observed as an off-target effect in hypertensive patients"
+    - "Topical minoxidil requires sulfation by scalp SULT1A1 to its active metabolite"
+    - "SULT1A1 activity predicts topical minoxidil response"
+  required_citations:
+    - "minoxidil"
+  forbidden_claims: []
+  min_confidence: 0.6
+  references:
+    - "Goren A et al. SULT1A1 activity and topical minoxidil response. Skin Appendage Disord 2018"
+
+- case_id: thalidomide_mm
+  name: "Thalidomide -> multiple myeloma (cereblon-mediated)"
+  task_type: drug_repurposing
+  category: curated
+  question: |
+    How was thalidomide repositioned for multiple myeloma after its
+    teratogenic withdrawal, and what is the molecular target underlying
+    both anti-myeloma activity and teratogenicity?
+  context:
+    drug: thalidomide
+    proposed_indication: "multiple myeloma"
+  expected_target: "CRBN (cereblon)"
+  expected_target_aliases:
+    - "cereblon"
+    - "CRBN"
+    - "IKZF1"
+    - "IKZF3"
+    - "lenalidomide"
+  expected_facets:
+    - "Thalidomide binds cereblon (CRBN), a substrate adapter for the CRL4 E3 ubiquitin ligase"
+    - "IMiD/cereblon engagement drives degradation of IKZF1 and IKZF3, neomorphic substrates"
+    - "IKZF1/3 degradation underlies anti-myeloma activity"
+    - "Lenalidomide and pomalidomide are next-generation IMiDs with the same cereblon target"
+    - "Cereblon binding also mediates teratogenicity via SALL4 degradation"
+  required_citations:
+    - "cereblon"
+  forbidden_claims: []
+  min_confidence: 0.7
+  references:
+    - "Lu G et al. The Myeloma Drug Lenalidomide Promotes the Cereblon-Dependent Destruction of IKZF1 and IKZF3. Science 2014"
+    - "Donovan KA et al. Thalidomide promotes degradation of SALL4. eLife 2018"
+
+- case_id: nirmatrelvir_covid
+  name: "Nirmatrelvir — HCV-era 3CL-protease chemistry repurposed for SARS-CoV-2 (Paxlovid)"
+  task_type: drug_repurposing
+  category: curated
+  question: |
+    Outline how nirmatrelvir's chemical scaffold was derived from prior
+    coronavirus protease inhibitor programs, what its molecular target
+    is in SARS-CoV-2, and why it is co-formulated with ritonavir.
+  context:
+    drug: nirmatrelvir
+    proposed_indication: "COVID-19"
+  expected_target: "SARS-CoV-2 Mpro / 3CL-protease"
+  expected_target_aliases:
+    - "3CLpro"
+    - "Mpro"
+    - "main protease"
+    - "Paxlovid"
+  expected_facets:
+    - "Nirmatrelvir inhibits the SARS-CoV-2 main protease (Mpro / 3CLpro)"
+    - "The scaffold derives from earlier Pfizer programs against SARS-CoV-1 protease (e.g. PF-00835231)"
+    - "Mpro cleaves viral polyproteins pp1a/pp1ab, essential for viral replication"
+    - "Nirmatrelvir is metabolized by CYP3A4 to a less-active form, hence co-administration with ritonavir as a pharmacokinetic booster"
+    - "EPIC-HR demonstrated ~89% reduction in hospitalization or death in high-risk unvaccinated adults"
+  required_citations:
+    - "nirmatrelvir"
+  forbidden_claims:
+    - "nirmatrelvir is an RNA polymerase inhibitor"
+  min_confidence: 0.75
+  references:
+    - "Owen DR et al. An oral SARS-CoV-2 Mpro inhibitor clinical candidate (nirmatrelvir). Science 2021"
+    - "Hammond J et al. Oral Nirmatrelvir for High-Risk, Nonhospitalized Adults with Covid-19 (EPIC-HR). NEJM 2022"
